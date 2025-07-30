@@ -1,5 +1,6 @@
 import Card from "../components/Card"
 import { useRef } from "react"
+import { Globe } from "../components/Globe";
 
 const About = () => {
     const grid2Container = useRef();
@@ -79,10 +80,23 @@ const About = () => {
         </div>
 
         {/* grid 3 */}
-        <div className="grid-black-color grid-3"></div>
+        <div className="grid-black-color grid-3">
+            <div className="z-10 w-[50%]">
+                <p className="headtext">Time Zone</p>
+                <p className="subtext">I'm based in Malaysia, and available for work world-wide.</p>
+            </div>
+            <figure className="absolute left-[30%] top-[10%]"> 
+                <Globe />
+
+            </figure>
+        </div>
 
         {/* grid 4 */}
-        <div className="grid-special-color grid-4"></div>
+        <div className="grid-special-color grid-4">
+            <div className="flex flex-col items-center justify-center gap-4 size-full">
+                <p className="text-center headtext">Let's connect and build projects together!</p>
+            </div>
+        </div>
 
         {/* grid 5 */}
         <div className="grid-default-color grid-5"></div>
